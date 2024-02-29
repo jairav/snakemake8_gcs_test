@@ -2,9 +2,9 @@ import os
 
 rule all:
     input:
-        storage.gcs("gs://bkt-dev-prj-dev-rfsci-bio-nonprt-posit-storage-bio/config_austin_slack.yaml")
+        storage.gcs("gs://bkt-test-926/scratch/blah.txt")
     output:
-        storage.gcs("gs://bkt-test-926/logs/test_gcs_snakemake.txt")
+        storage.gcs("gs://bkt-test-926/scratch/SUCCESS.txt")
     shell:
         """
         cp {input} {output} 

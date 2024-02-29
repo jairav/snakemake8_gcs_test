@@ -1,4 +1,5 @@
-**prereq**: GcloudCLI (authed), appropriate buckets, snakemake8 and storage plugin installed (from here: https://github.com/amc-heme/scExploreR_Anndata_GCS_Test/tree/main )
+**prereq**: gcloud (authed), snakemake:latest
 
+**install plugin**: (`pip install git+https://github.com/jairav/snakemake-storage-plugin-gcs/`)
 
-to test: `snakemake --default-storage-provider gcs --storage-gcs-project prj-dev-bio-sandbox`
+**to run**: `snakemake --default-storage-provider gcs --storage-gcs-project project-name`
